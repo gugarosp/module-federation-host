@@ -1,12 +1,34 @@
-# React + Vite
+# Module Federation - Host
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an example of Module Federation host application. It will use components from another application.
 
-Currently, two official plugins are available:
+## How to run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Install [Node.js](https://nodejs.org/)
 
-## Expanding the ESLint configuration
+2. Clone this repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Go the the folder where you cloned the repository and run `npm install`
+
+4. Wait for the installation and then run `npm run dev`
+
+The application will run using components from [this](https://gustavo-pereira-14-module-federation-remote-modul-04682e89d-ze.zephyrcloud.app) application.
+
+## How to point to a local application
+
+This application uses components from an already published application. To use components from a local application, follow these steps:
+
+1. Go to [this](https://github.com/gugarosp/module-federation-remote) repository and follow the instructions there
+
+2. Go to `vite.config.js` on this application, comment the `remoteApp` that uses the published URL and uncomment the `remoteApp` that uses 'localhost'
+
+```
+//remoteApp: 'https://gustavo-pereira-14-module-federation-remote-modul-04682e89d-ze.zephyrcloud.app/assets/remoteEntry.js'`
+remoteApp: 'http://localhost:4173/assets/remoteEntry.js'
+```
+
+Note: `4173` is the default port from the [remote](https://github.com/gugarosp/module-federation-remote) application. If you use another port, you need to change it in the `vite.config.js` file on this application
+
+3. Run `npm run dev`
+
+Now the components will come from the local application.
