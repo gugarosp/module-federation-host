@@ -18,7 +18,7 @@ function App() {
 
     return (
         <>
-            <Header text="About Module Federation" />
+            <Header text="About Module Federation" colorMode="light" />
             <div className="article_font_size">
                 <Button onClick={decreaseFont}>A-</Button>
                 <Button onClick={increaseFont}>A+</Button>

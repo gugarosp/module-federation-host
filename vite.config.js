@@ -10,7 +10,7 @@ export default defineConfig({
         federation({
             name: 'host_app',
             remotes: {
-                remoteApp: 'https://gustavo-pereira-11-module-federation-remote-modul-70de7c62f-ze.zephyrcloud.app/assets/remoteEntry.js'
+                remoteApp: 'https://gustavo-pereira-14-module-federation-remote-modul-04682e89d-ze.zephyrcloud.app/assets/remoteEntry.js'
             }
         })
     ],

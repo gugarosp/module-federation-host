@@ -50,6 +50,10 @@
     gap: 8px;
 }
 
+article {
+    color: #242424;
+}
+
 .heading_2 {
     zoom: 1.5;
 }
