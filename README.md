@@ -1,8 +1,8 @@
 # Module Federation - Host
 
-This is an example of Module Federation host application. It will use components from another application.
+This is an example of Module Federation host application. It will use components from another application. A live version of this application can be seen [here](https://t-latest-gustavo-pereira-module-federation-host-modul-a738af-ze.zephyrcloud.app/).
 
-## How to run
+## How to run locally
 
 1. Install [Node.js](https://nodejs.org/)
 
@@ -12,7 +12,7 @@ This is an example of Module Federation host application. It will use components
 
 4. Wait for the installation and then run `npm run dev`
 
-The application will run using the components `Header` and `Button` from [this](https://gustavo-pereira-17-module-federation-remote-modul-f8e913f13-ze.zephyrcloud.app) application.
+The application will run using the components `Header` and `Button` from [this](https://t-latest-gustavo-pereira-module-federation-remote-mod-6a8fef-ze.zephyrcloud.app/) application.
 
 ## How to point to a local application
 
@@ -23,7 +23,7 @@ This application uses components from an already published application. To use c
 2. Go to `vite.config.js` on this application, comment the `remoteApp` that uses the published URL and uncomment the `remoteApp` that uses 'localhost'
 
 ```
-//remoteApp: 'https://gustavo-pereira-17-module-federation-remote-modul-f8e913f13-ze.zephyrcloud.app/assets/remoteEntry.js'`
+//remoteApp: 'https://t-latest-gustavo-pereira-module-federation-remote-mod-6a8fef-ze.zephyrcloud.app/assets/remoteEntry.js'`
 remoteApp: 'http://localhost:4173/assets/remoteEntry.js'
 ```
 
