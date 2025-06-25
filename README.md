@@ -16,7 +16,7 @@ The application will run using the components `Header` and `Button` from [this](
 
 ## How to point to a local application
 
-This application uses components from an already published application. To use components from a local application, follow these steps:
+This project uses components from an already published application. To use components from a local application, follow these steps:
 
 1. Go to [this](https://github.com/gugarosp/module-federation-remote) repository and follow the instructions there
 
